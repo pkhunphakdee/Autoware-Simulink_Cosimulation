@@ -1,0 +1,43 @@
+Page 1
+Page 2
+Page 3
+Page 4
+Page 5
+Page 6
+
+Page 7 [Phuris]
+
+Before going to our progress, I would like to give a short reminder about how ROS work.
+ROS is a communication network of nodes which may represent certain functions.
+They communicate to each other via topic as well as with the help of publisher and subscriber in each node
+
+Page 8  [Phuris]
+
+Because Autoware is ROS based software. We can apply what can be done in ROS directly to autoware.
+Here is an example that we have connected our ROS node to autoware node. 
+Our ROS node are develop by using MATLAB with the help of Robotic System Toolbox.
+We created a subscriber that subscribe to gnss_poss topic and what we got from this topic are the instantaneous position and the orientation of the car. And then we write a callback function that plot the current position of the car as you can see in the video.
+The massage type from the gnss_pose topic is of the type geometry_msgs/points
+
+Page 9  [Phuris]
+
+Before doing the example we have shown to you, we have tried to develop simple nodes that exchange data together in order to get more familiar with ROS. 
+The node talker publish the string message “hello world” to topic chatter as you can see on the left picture and the node listener subscribe message from this topic and print out what information that it receive as can be seen on the right picture.
+This 2 nodes are developed using c++ language
+
+Page 10 [Phuris]
+
+Then we move to create a ROS node in MATLAB and make it communicate to the C++ ROS node. 
+In this slide, the MATLAB ROS node subscribe the message from the topic chatter and we can see that, it can get the message from the topic.
+
+Page 11 [Phuris]
+
+And then we tried the other way round. Using MATLAB ROS node as a talker and publish message to the listener node. And as you can see in the right picture, the message from our MATLAB ROS node appear in the listener node. So, this means that our MATLAB ROS node can be used in both direction.
+Now Daniyal will talk about the Autoware toolbox that we also mentioned in the last time.
+
+Page 12
+Page 13
+Page 14
+Page 15
+Page 16
+Page 17

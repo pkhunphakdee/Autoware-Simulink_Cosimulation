@@ -1,0 +1,31 @@
+How to run the model
+
+In Autoware
+	- Open Autoware
+	- load the Vehicle Model
+	- load the vector map files
+	- load the TF file
+	- In computing tab, turn on the Vel_pose_connect (simulation mode)
+	- turn on the WfSimulator
+	- Open Rviz
+	- set the initial position of the car
+
+Open Matlab
+	- start ROS node in MATLAB with rosinit();
+	- add the path of the Simulink Keyboard Add-ons (in my case /home/phuris/Desktop/MATLAB Add-Ons/Collections/Simulink Keyboard Input v2). After running the model, please make sure that Keyboard Window is shown up.
+	- open the model vehicle_cmd
+	- run the model
+	- control the car by the keyboard
+		- press 'up' for go forward
+		- press 'down' to stop the car
+		- press 'left' to turn the car to the left
+		- press 'right' to turn the car to the right
+		- press 'spacebar' to stop turning the car
+
+How to Use
+
+	- In the model, there exists two gain blocks for left steering angle and right steering angle which can be adjusted so that the response can be quicker.
+
+	- In addition to steering, there exists two gain blocks that determines until which velocity the vehicle should accelerate and decelerate. Those values are currently set to 60 km/h and 0 km/h.
+
+	- Key control can be think of as a switch. Meaning that for example, when up-key is pressed, the vehicle will accelerate even though key is not pressed anymore. Same condition applies for left and right steering of the vehicle as well.

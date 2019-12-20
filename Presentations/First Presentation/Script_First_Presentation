@@ -1,0 +1,40 @@
+Page 1
+Page 2
+Page 3
+Page 4
+Page 5
+Page 6
+Page 7
+
+Page 8 [Phuris]
+Because Autoware is ROS based software. Self driving modules are developed using ROS. 
+In ROS, the software is abstracted as nodes and topics. 
+Node represent individual component modules, 
+Topics mediate inputs and outputs between nodes. 
+Communication between nodes follows a publish/ subscribe model.
+However, it is also possible to use MATLAB/Simulink to develop ROS nodes for co-simulation.
+To do this, one approach is to use Robotic System Toolbox
+
+Page 9 [Phuris]
+In the Robotic System Toolbox, there are 3 main modules. 
+The first one is MATLAB-ROS interface. 
+This module enable us to write robot algorithm in MATLAB and use ROS to test the algorithm in real robot or in simulator. 
+Also, data from ROS robots can be imported to visualise and analyze in MATLAB.
+The second module is Built-in Robotic Algorithm. 
+This provide standard robotic algorithms such as Path planning, Path tracking as a building block to develop a specific robot.
+The third module is Simulink-ROS interface. This module allow us to design our algorithm in Simulink. 
+The algorithm can be tested the same way as in MATLAB-ROS interface module.
+ROS node can be generated from the algorithm that is developed by Simulink.
+
+Page 10 [Phuris]
+We also found Autoware Toolbox which is a set of sample algorithms suite for Autoware. 
+For example, there are ACF Detector node which Detecting people using aggregate channel features. 
+These code are available in both Matlab and Simulink file. 
+With these codes we are going to connect Autoware to MATLAB/Simulink via Robotic System Toolbox.
+
+Page 11
+Page 12
+Page 13
+Page 14
+Page 15
+Page 16
