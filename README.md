@@ -1,4 +1,4 @@
-# Software Lab - Autoware
+# Software Lab - Autonomous Vehicle Functions Cosimulation between Autoware and Simulink
 
 ## Abstract 
 *This project presents methods to demonstrate interconnectivity between Autoware and MATLAB using Robotics Operating System (ROS) which aims to provide an example of automated driving co-simulation. To establish a communication between MATLAB and Autoware, an extensive use of a tool named as Autoware Toolbox is utilized.*
